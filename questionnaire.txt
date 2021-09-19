@@ -4,29 +4,37 @@ QUESTIONNAIRE!
 The following questionnaire seeks to understand your previous knowledge about some of the concepts that we will learn in class during the coming term.
 
 1. Do you know any programming languages? If you do, which ones?
-COMP204
+I took COMP204 at McGill, so I have a basic (intro level) understanding of Python.
 
 2. What is your primary computer operating system (OS)?
 MacOS
 
 3. Do you own a smartphone, tablet, or mobile device? What is your favourite OS for mobile devices?
+I own an iPhone and iPad. My favorite OS is iOS. 
 
 4. Do you use any social networking services? If you do, which ones? Why?
+I use Facebook and Instagram. Facebook is an easy platform to connect with a large group of people (i.e. to organize McGill events) and to instant message people (i.e. Messenger). Instagram is probably the most used social media platform in my generation. It's an easy way to keep up to date with your friend's lives through pictures.    
 
 5. Expand the following acronyms and do research about their meaning. You may look them up if you don't know:
 
-    HTTP
-    REST    
-    API
+    HTTP: Hypertext Transfer Protocol - HTTP is a protocol used to transfer data over the web.
+    REST: Representational State Transfer - REST is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.
+    API: Application Programming Interface - API is an interface that simplfies software development and innovation by enabling applications to exchange data and functionality easily and securely. It acts as a software intermediary enabling two applications to communicate.
 
 6. Do you play a musical instrument or sing? If so, how much experience do you have?
+I am a percussionist, and I mainly play the drums and the marimba. I took private lessons for 8 years and played in the Middle School and High School orchestra at my school. Since coming to McGill I played with a band for a year.
 
 7. Can you read music notation? If so, how well?
+Yes I can, since I had to learn to play the piano, the marimba, and the timpani.
 
 8. How large is your personal music collection? Estimate the number of artists, albums, and songs. If instead you listen to music using streaming services, how many playlists, artists, albums, and songs do you have in your account?
+It's hard to estimate, but I think I have at least a couple hundred artists and albums, and more songs. I don't use playlists that often. 
 
 9. How do you search and find new music?
+Recently, I discover new music through Apple Music's feature of autoplaying music similar to the song you previously selected. Or I let YouTube autoplay music. I also get song recommendations through friends, as well as find music through movies and tv shows. 
 
 11. Are you aware of any ways in which artists are dealing with public performances post-COVID? Do you think live performances are essential to your musical experience?
+I think artists are doing whatever they can to do live performances post-COVID, since live performances are so important to the artist and their fans. The concerts I've seen that are happening have a mask mandata and vaccination policy, in order to ensure the safety of everyone. Yes, live performances are essential to my musical experience. Being emmersed in music and feeling the beat through out my body is such an amazing experience. It's the best way to feel connected to the artist. 
 
 12. Name two musical artists that you like. What do you find interesting about their music that makes you like them?
+As a percussionist, I always love listening to some of the Red Hot Chili Peppers' songs because of the pronounced drumming. I really like Harry Styles because his music is fun, groovy, and has pronouced instrumentals. I like music that you can clearly hear the instruments, and it's not just done digitially.
