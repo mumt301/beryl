@@ -4,7 +4,6 @@ body {
   
   h1 {
     color: rgb(87, 85, 85);
-    font-family: copperplate;
     text-align: center;
   }
 
@@ -14,7 +13,5 @@ body {
   }
   
   p {
-    font-family: verdana;
-    font-size: 20px;
     text-align: center;
   }
