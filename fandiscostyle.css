@@ -18,9 +18,15 @@
 }
 
 h1 {
-    font-size: 40px
+    font-size: 45px
 }
 
 h4 {
-    font-size: 16px
+    font-size: 18px
+}
+
+.links {
+    background-color: rgb(207, 224, 230);
+    padding: 1px;    
+    text-align: center;
 }
