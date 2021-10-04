@@ -38,3 +38,9 @@ body {
     flex: 33.33%;
     padding: 5px;
   }
+
+.space {
+    background-color: rgb(223, 252, 223);
+    padding: 2px;    
+    text-align: center;
+}
