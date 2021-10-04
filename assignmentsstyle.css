@@ -1,0 +1,13 @@
+body {
+    background-color: lightgray;
+  }
+
+h1 {
+    font-size: 40px
+}
+
+.links {
+    background-color: whitesmoke;
+    padding: 5px;    
+    text-align: center;
+}
