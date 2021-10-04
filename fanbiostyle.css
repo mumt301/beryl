@@ -1,0 +1,26 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.column{
+    flex: 50%;
+    max-width: 49%;
+    padding: 4px;
+    text-align: justify;
+}
+
+.column img{
+    margin-top: 9px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+h1 {
+    font-size: 45px
+}
+
+body {
+    background-color: rgb(241, 184, 184);
+  }

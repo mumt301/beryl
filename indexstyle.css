@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+  }
+  
+  h1 {
+    color: rgb(59, 57, 57);
+    font-size: 50px;
+  }
+
+  h3 {
+    color: rgb(87, 85, 85);
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+  }
+
+  img {
+    border: 5px solid #555;
+  }
+
+  h4 {
+    font-size: 20px;
+  }

@@ -1,0 +1,8 @@
+html {    
+    background: url("harryvogue.jpeg") no-repeat center fixed;     
+    background-size: cover;
+}
+
+h1 {
+    font-size: 40px
+}
