@@ -48,7 +48,7 @@ let audio_sample = [{
     'Compressed File Size': '436 KB',
     'Compression Ratio': '0.08',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ogg_low.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ogg_low.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ogg_residual_low.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -58,7 +58,7 @@ let audio_sample = [{
     'Compressed File Size': '646 KB',
     'Compression Ratio': '0.12',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ogg_low_mid.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ogg_low_mid.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ogg_residual_low_mid.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -68,7 +68,7 @@ let audio_sample = [{
     'Compressed File Size': '905 KB',
     'Compression Ratio': '0.16',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ogg_high_mid.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ogg_high_mid.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ogg_residual_high_mid.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -78,7 +78,7 @@ let audio_sample = [{
     'Compressed File Size': '1800 KB',
     'Compression Ratio': '0.33',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ogg_high.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ogg_high.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ogg_residual_high.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -88,7 +88,7 @@ let audio_sample = [{
     'Compressed File Size': '748 KB',
     'Compression Ratio': '0.14',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ac3_96.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ac3_96.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ac3_residual_96.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -98,7 +98,7 @@ let audio_sample = [{
     'Compressed File Size': '997 KB',
     'Compression Ratio': '0.18',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ac3_128.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ac3_128.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ac3_residual_128.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -108,7 +108,7 @@ let audio_sample = [{
     'Compressed File Size': '1500 KB',
     'Compression Ratio': '0.27',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ac3_192.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ac3_192.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ac3_residual_192.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -118,7 +118,7 @@ let audio_sample = [{
     'Compressed File Size': '2500 KB',
     'Compression Ratio': '0.45',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_ac3_320.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_ac3_320.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_ac3_residual_320.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -128,7 +128,7 @@ let audio_sample = [{
     'Compressed File Size': '1300 KB',
     'Compression Ratio': '0.24',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_m4a_98.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_m4a_98.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_m4a_residual_98.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -138,7 +138,7 @@ let audio_sample = [{
     'Compressed File Size': '1500 KB',
     'Compression Ratio': '0.27',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_m4a_128.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_m4a_128.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_m4a_residual_128.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -148,7 +148,7 @@ let audio_sample = [{
     'Compressed File Size': '1400 KB',
     'Compression Ratio': '0.25',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_m4a_192.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_m4a_192.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_m4a_residual_192.wav">residual audio</a>'
   }, {
     'File Name': 'Jazz',
@@ -158,7 +158,7 @@ let audio_sample = [{
     'Compressed File Size': '1400 KB',
     'Compression Ratio': '0.25',
     'Link to Original Version': '<a href="jazz_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="jazz_m4a_320.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="jazz_m4a_320.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="jazz_m4a_residual_320.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -208,7 +208,7 @@ let audio_sample = [{
     'Compressed File Size': '395 KB',
     'Compression Ratio': '0.08',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ogg_low.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ogg_low.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ogg_residual_low.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -218,7 +218,7 @@ let audio_sample = [{
     'Compressed File Size': '575 KB',
     'Compression Ratio': '0.11',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ogg_low_mid.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ogg_low_mid.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ogg_residual_low_mid.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -228,7 +228,7 @@ let audio_sample = [{
     'Compressed File Size': '802 KB',
     'Compression Ratio': '0.16',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ogg_high_mid.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ogg_high_mid.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ogg_residual_high_mid.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -238,7 +238,7 @@ let audio_sample = [{
     'Compressed File Size': '1400 KB',
     'Compression Ratio': '0.27',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ogg_high.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ogg_high.ogg">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ogg_residual_high.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -248,7 +248,7 @@ let audio_sample = [{
     'Compressed File Size': '698 KB',
     'Compression Ratio': '0.14',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ac3_96.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ac3_96.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ac3_residual_96.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -258,7 +258,7 @@ let audio_sample = [{
     'Compressed File Size': '931 KB',
     'Compression Ratio': '0.18',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ac3_128.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ac3_128.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ac3_residual_128.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -268,7 +268,7 @@ let audio_sample = [{
     'Compressed File Size': '1400 KB',
     'Compression Ratio': '0.27',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ac3_192.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ac3_192.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ac3_residual_192.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -278,7 +278,7 @@ let audio_sample = [{
     'Compressed File Size': '2300 KB',
     'Compression Ratio': '0.45',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_ac3_320.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_ac3_320.ac3">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_ac3_residual_320.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -288,7 +288,7 @@ let audio_sample = [{
     'Compressed File Size': '1500 KB',
     'Compression Ratio': '0.29',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_m4a_98.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_m4a_98.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_m4a_residual_98.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -298,7 +298,7 @@ let audio_sample = [{
     'Compressed File Size': '1400 KB',
     'Compression Ratio': '0.27',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_m4a_128.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_m4a_128.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_m4a_residual_128.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -308,7 +308,7 @@ let audio_sample = [{
     'Compressed File Size': '1600 KB',
     'Compression Ratio': '0.31',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_m4a_192.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_m4a_192.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_m4a_residual_192.wav">residual audio</a>'
   }, {
     'File Name': 'Violin',
@@ -318,7 +318,7 @@ let audio_sample = [{
     'Compressed File Size': '1500 KB',
     'Compression Ratio': '0.29',
     'Link to Original Version': '<a href="violin_wav_original.wav">original audio</a>',
-    'Link to Compressed Version': '<a href="violin_m4a_320.mp3">compressed audio</a>',
+    'Link to Compressed Version': '<a href="violin_m4a_320.m4a">compressed audio</a>',
     'Link to Residual Noise': '<a href="violin_m4a_residual_320.wav">residual audio</a>'
   }]
 
