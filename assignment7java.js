@@ -29,9 +29,9 @@ function thereminControl(e, oscillator, oscillator2, theremin, semitones, minfre
     oscillator2.volume = thereminVolume;
 
     // Provide feedback to the user
-    userfrequency = document.getElementById("userfrequency");
+    let userfrequency = document.getElementById("userfrequency");
     userfrequency.innerHTML = "Frequency of note: "+ thereminFreq;
-    usernotename = document.getElementById("usernotename");
+    let usernotename = document.getElementById("usernotename");
     usernotename.innerHTML = "Note: "+ noteFromFrequency(thereminFreq);
 }
 
