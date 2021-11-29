@@ -27,6 +27,12 @@ function thereminControl(e, oscillator, oscillator2, theremin, semitones, minfre
     oscillator2.frequency = thereminFreq2;
     console.log("Volume: ", thereminVolume);
     oscillator2.volume = thereminVolume;
+
+    // Provide feedback to the user
+    userfrequency = document.getElementById("userfrequency");
+    userfrequency.innerHTML = "Frequency of note: "+ thereminFreq;
+    usernotename = document.getElementById("usernotename");
+    usernotename.innerHTML = "Note: "+ noteFromFrequency(thereminFreq);
 }
 
 // Turn theremin off
@@ -95,11 +101,5 @@ function runAfterLoadingPage() {
         thereminOff(oscillator, oscillator2);
     });
 }
-
-userfrequency = document.getElementById("userfrequency");
-userfrequency.innerHTML = "Frequency of note: "+ thereminFreq;
-
-usernotename = document.getElementById("usernotename");
-usernotename.innerHTML = "Note: "+ noteFromFrequency(thereminFreq);
 
 window.onload = runAfterLoadingPage;
