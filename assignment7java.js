@@ -33,6 +33,11 @@ function thereminControl(e, oscillator, oscillator2, theremin, semitones, minfre
     userfrequency.innerHTML = "Frequency of note: "+ thereminFreq;
     let usernotename = document.getElementById("usernotename");
     usernotename.innerHTML = "Note: "+ noteFromFrequency(thereminFreq);
+
+    let userfrequency2 = document.getElementById("userfrequency2");
+    userfrequency2.innerHTML = "Frequency of the second note: "+ thereminFreq2;
+    let usernotename2 = document.getElementById("usernotename2");
+    usernotename2.innerHTML = "Second note: "+ noteFromFrequency(thereminFreq2);
 }
 
 // Turn theremin off
