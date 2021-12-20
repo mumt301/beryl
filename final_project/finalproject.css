@@ -13,41 +13,10 @@ h2 {
   text-align: center;
 }
 
-/*
-.row {
-  display: flex;
-  padding: 4px;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-}
-
-.left {
-  width: 30%;
-}
-
-.right {
-  width: 70%;
-}
-*/
-
 fieldset {
   background-color: whitesmoke;
   width: 75%;
 }
-
-/*
-ul {
-  text-align: left;
-}
-
-li {
-  display: inline-block;
-  margin-inline-start: 10px;
-}
-*/
 
 .settings {
   display: flex;

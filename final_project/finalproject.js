@@ -117,7 +117,7 @@ function getGeneralWeather(specificWeatherCondition) {
   }
 }
 
-// function to ____________
+// function to get album information from the last.fm API
 function getAlbumInfo(album, artist, albumIndex) {
   let mBaseURL = "http://ws.audioscrobbler.com/2.0/";
   let APIkey = "ba887b00dd234cdfbf885496f213a175";
@@ -148,7 +148,7 @@ function getAlbumInfo(album, artist, albumIndex) {
     });
 }
 
-// function to get the album suggestions from the lastfm API
+// function to get the album suggestions from the last.fm API
 function getAlbumSuggestions(tag) {
   let mBaseURL = "http://ws.audioscrobbler.com/2.0/";
   let APIkey = "ba887b00dd234cdfbf885496f213a175";
@@ -239,7 +239,7 @@ function main() {
 
       console.warn("--------- submit button pressed -----------");
 
-      // prevent the normal submission of the form
+      //prevent the normal submission of the form
       e.preventDefault();
 
       var city = document.getElementById("city").value;
@@ -302,10 +302,10 @@ function main() {
             console.log("generalWeatherForecast:");
             console.log(generalWeatherForecast);
 
-            // input sentence about the weather
+            // Input sentence about the weather
             var currentWeather = document.getElementById("currentWeather");
 
-            // write a sentence about the forecast in the inputted city
+            // Write a sentence about the forecast in the inputted city
             currentWeather.innerText = `The forecast in ${data["locationName"]}, ${data["locationCountry"]} is ${data["generalWeatherForecast"]}.`;
 
             // get the tag associated with the general weather condition
@@ -330,26 +330,29 @@ function main() {
                 var albumArtist = album["albumArtist"];
 
                 // call the getAlbumInfo function to obtain the URL of the album
-                getAlbumInfo(albumName, albumArtist, i)
-                  .then(function (albumInfo) {
-                    console.warn("albumInfo:");
-                    console.log(albumInfo);
-                    var albumURL = albumInfo["albumURL"];
-                    var albumIndex = albumInfo["albumIndex"];
-                    //console.log(albumURL);
+                getAlbumInfo(albumName, albumArtist, i).then(function (
+                  albumInfo
+                ) {
+                  console.warn("albumInfo:");
+                  console.log(albumInfo);
+                  var albumURL = albumInfo["albumURL"];
+                  var albumIndex = albumInfo["albumIndex"];
+                  //console.log(albumURL);
 
-                    var albums = document.getElementsByClassName("album");
-                    console.warn("albums:");
-                    console.log(albums);
+                  var albums = document.getElementsByClassName("album");
+                  console.warn("albums:");
+                  console.log(albums);
 
-                    var aTag = albums[albumIndex];
-                    console.warn("aTag1 :");
-                    console.log(aTag);
+                  var aTag = albums[albumIndex];
 
-                    aTag.href = albumURL;
-                    console.warn("aTag2 :");
-                    console.log(aTag);
-                  });
+                  console.warn("aTag1 :");
+                  console.log(aTag);
+
+                  aTag.href = albumURL;
+
+                  console.warn("aTag2 :");
+                  console.log(aTag);
+                });
               }
             });
           });

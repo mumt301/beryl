@@ -2,228 +2,238 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Final Project</title>
-  <link rel="stylesheet" href="finalproject.css">
-  <script src="finalproject.js" type="text/JavaScript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="finalproject.css">
+    <script src="finalproject.js" type="text/JavaScript"></script>
 </head>
 
 <body>
-  <h1>Get music recomendations based on the weather!</h1>
+    <h1>Get music recomendations based on the weather!</h1>
 
-  <div class="row">
-    <div class="column left">
-      <form id="settings" name="myForm" method="post">
-        <fieldset>
+    <center>
+        <form id="settings" name="myForm" method="post">
+            <fieldset>
 
-          <!-- form to get the weather in a specific city -->
-          <p>What city do you want the weather of?</p>
-          <label for="city">City:</label>
-          <input type="text" name="city" class="input" id="city" value="Paris">
+                <!-- form to get the weather in a specific city -->
+                <p><strong>What city do you want the weather of?</strong></p>
+                <label for="city">City:</label>
+                <input type="text" name="city" class="input" id="city" value="">
 
-          <br>
-          <br>
+                <br>
+                <br>
 
-          <!-- form to type genre/mood for each weather condition -->
-          <p>What genre/mood do you associate with each weather?</p>
-          <div class="weather">
-            <img src="images/sun.png" alt="sunny">
-            <label for="sun">Sunny:</label>
+                <!-- form to type genre/mood for each weather condition -->
+                <p><strong>What genre/mood do you associate with each weather?</strong></p>
 
-            <input type="text" name="sun" id="sun" class="input" list="tags" value="Rock" />
-            <datalist id="tags">
-              <option>Rock</option>
-              <option>Electronic</option>
-              <option>Alternative</option>
-              <option>Indie</option>
-              <option>Pop</option>
-              <option>R&B</option>
-            </datalist>
-          </div>
-          <br>
-          <div class="weather">
-            <img src="images/cloud.png" alt="cloudy">
-            <label for="cloudy">Cloudy:</label>
-            <input type="text" name="cloudy" id="cloudy" class="input" list="tags" value="Rock" />
-            <datalist id="tags">
-              <option>Rock</option>
-              <option>Electronic</option>
-              <option>Alternative</option>
-              <option>Indie</option>
-              <option>Pop</option>
-              <option>R&B</option>
-            </datalist>
-          </div>
-          <br>
-          <div class="weather">
-            <img src="images/fog.png" alt="foggy">
-            <label for="fog">Foggy:</label>
-            <input type="text" name="fog" id="fog" class="input" list="tags" value="Rock" />
-            <datalist id="tags">
-              <option>Rock</option>
-              <option>Electronic</option>
-              <option>Alternative</option>
-              <option>Indie</option>
-              <option>Pop</option>
-              <option>R&B</option>
-            </datalist>
-          </div>
-          <br>
-          <div class="weather">
-            <img src="images/rain.png" alt="rain">
-            <label for="rain">Raining:</label>
-            <input type="text" name="rain" id="rain" class="input" list="tags" value="Rock" />
-            <datalist id="tags">
-              <option>Rock</option>
-              <option>Electronic</option>
-              <option>Alternative</option>
-              <option>Indie</option>
-              <option>Pop</option>
-              <option>R&B</option>
-            </datalist>
-          </div>
-          <br>
-          <div class="weather">
-            <img src="images/thunder.png" alt="thunder">
-            <label for="thunder">Thunder:</label>
-            <input type="text" name="thunder" id="thunder" class="input" list="tags" value="Rock" />
-            <datalist id="tags">
-              <option>Rock</option>
-              <option>Electronic</option>
-              <option>Alternative</option>
-              <option>Indie</option>
-              <option>Pop</option>
-              <option>R&B</option>
-            </datalist>
-          </div>
-          <br>
-          <div class="weather">
-            <img src="images/snow.png" alt="snow">
-            <label for="snow">Snowing:</label>
+                <div class="settings">
+                    <div>
+                        <img src="images/sun.png" alt="sunny">
+                        <label for="sun">Sunny:</label>
+                        <input type="text" name="sun" id="sun" class="input" list="tags" value="Pop" />
+                        <datalist id="tags">
+                            <option>Rock</option>
+                            <option>Electronic</option>
+                            <option>Alternative</option>
+                            <option>Indie</option>
+                            <option>Pop</option>
+                            <option>R&B</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <img src="images/cloud.png" alt="cloudy">
+                        <label for="cloudy">Cloudy:</label>
+                        <input type="text" name="cloudy" id="cloudy" class="input" list="tags" value="Rock" />
+                        <datalist id="tags">
+                            <option>Rock</option>
+                            <option>Electronic</option>
+                            <option>Alternative</option>
+                            <option>Indie</option>
+                            <option>Pop</option>
+                            <option>R&B</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <img src="images/fog.png" alt="foggy">
+                        <label for="fog">Foggy:</label>
+                        <input type="text" name="fog" id="fog" class="input" list="tags" value="Spooky" />
+                        <datalist id="tags">
+                            <option>Rock</option>
+                            <option>Electronic</option>
+                            <option>Alternative</option>
+                            <option>Indie</option>
+                            <option>Pop</option>
+                            <option>R&B</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <img src="images/rain.png" alt="rain">
+                        <label for="rain">Raining:</label>
+                        <input type="text" name="rain" id="rain" class="input" list="tags" value="Moody" />
+                        <datalist id="tags">
+                            <option>Rock</option>
+                            <option>Electronic</option>
+                            <option>Alternative</option>
+                            <option>Indie</option>
+                            <option>Pop</option>
+                            <option>R&B</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <img src="images/thunder.png" alt="thunder">
+                        <label for="thunder">Thunder:</label>
+                        <input type="text" name="thunder" id="thunder" class="input" list="tags" value="AC/DC" />
+                        <datalist id="tags">
+                            <option>Rock</option>
+                            <option>Electronic</option>
+                            <option>Alternative</option>
+                            <option>Indie</option>
+                            <option>Pop</option>
+                            <option>R&B</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <img src="images/snow.png" alt="snow">
+                        <label for="snow">Snowing:</label>
+                        <input type="text" name="snow" id="snow" class="input" list="tags" value="Christmas" />
+                        <datalist id="tags">
+                            <option>Rock</option>
+                            <option>Electronic</option>
+                            <option>Alternative</option>
+                            <option>Indie</option>
+                            <option>Pop</option>
+                            <option>R&B</option>
+                        </datalist>
+                    </div>
+                </div>
 
-            <input type="text" name="snow" id="snow" class="input" list="tags" value="Rock" />
-            <datalist id="tags">
-              <option>Rock</option>
-              <option>Electronic</option>
-              <option>Alternative</option>
-              <option>Indie</option>
-              <option>Pop</option>
-              <option>R&B</option>
-            </datalist>
-          </div>
 
-        </fieldset>
+                <p id="currentWeather"></p>
 
-        <br>
-        <center>
-          <input type="submit" value="Get recomendations!">
-        </center>
+
+            </fieldset>
+    </center>
+
+    <br>
+
+    <center>
+        <input type="submit" value="GET RECOMMENDATIONS!" class="button">
+    </center>
+
+    <br>
+
+    <div class="album_response">
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <a class="album" href="" target="_blank" artist="" album="" mbid="">
+                    <img src="" width=200></a>
+                <figcaption></figcaption>
+            </figure>
+        </div>
     </div>
-
-    <div class="column right">
-      <ul class="albums">
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <a class="album" href="" target="_blank" artist="" album="" mbid="">
-              <img src="" width=200></a>
-
-            <figcaption></figcaption>
-          </figure>
-        </li>
-      </ul>
-    </div>
-
-  </div>
 
 </body>
+
 <br>
+
 <center>
   <h3><a href="../assignments.html">assignment's page</a></h3>  
   <h1><a href="../index.html">H O M E</a></h1>
