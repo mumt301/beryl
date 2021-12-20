@@ -1,6 +1,6 @@
 // function to get the weather forecast from the weather API
 function getCityForecast(city) {
-  let wBaseURL = "http://api.weatherapi.com/v1/";
+  let wBaseURL = "https://api.weatherapi.com/v1/";
   let APIkey = "f2a21ad9a0524e2d90b35745210412";
   let days = "1";
   let aqi = "no";
@@ -119,7 +119,7 @@ function getGeneralWeather(specificWeatherCondition) {
 
 // function to get album information from the last.fm API
 function getAlbumInfo(album, artist, albumIndex) {
-  let mBaseURL = "http://ws.audioscrobbler.com/2.0/";
+  let mBaseURL = "https://ws.audioscrobbler.com/2.0/";
   let APIkey = "ba887b00dd234cdfbf885496f213a175";
   let method = "album.getinfo";
   let format = "json";
@@ -150,7 +150,7 @@ function getAlbumInfo(album, artist, albumIndex) {
 
 // function to get the album suggestions from the last.fm API
 function getAlbumSuggestions(tag) {
-  let mBaseURL = "http://ws.audioscrobbler.com/2.0/";
+  let mBaseURL = "https://ws.audioscrobbler.com/2.0/";
   let APIkey = "ba887b00dd234cdfbf885496f213a175";
   let method = "tag.getTopAlbums";
   let format = "json";
