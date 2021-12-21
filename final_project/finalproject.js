@@ -173,6 +173,13 @@ function getAlbumSuggestions(tag) {
         var albums = responseObj["albums"]["album"];
         console.log(albums);
 
+        /* 
+        The code below is the logic to display the album cover from the selected tag.
+        However, in last.fm, the top albums associated with a given tag are often from the same artists.
+        Therefore, to ensure a diversity of music suggestions, I wrote the following code.
+        The code will parse through and only select albums from artists who haven't already been selected.
+        */
+
         // store a list of the unique artists
         var selectedArtists = [];
 
@@ -188,7 +195,6 @@ function getAlbumSuggestions(tag) {
           var albumArtist = album["artist"]["name"];
           console.log(albumArtist);
 
-          // code to select for albums from different artists
           if (!selectedArtists.includes(albumArtist)) {
             selectedArtists.push(albumArtist);
 
@@ -208,12 +214,9 @@ function getAlbumSuggestions(tag) {
 
             var figure = figures[numberOfPopulatedAlbums];
 
-            var a = figure.querySelector("a");
             var img = figure.querySelector("img");
-            var figcaption = figure.querySelector("figcaption");
 
             img.src = albumImageURL;
-            //figcaption.innerText = `${albumName} - ${albumArtist}`;
 
             numberOfPopulatedAlbums++;
           }
@@ -277,21 +280,25 @@ function main() {
       // define an empty array to store the empty inputs
       var missingInputs = [];
 
+      // loop over the keys of the formData object
       for (var key in formData) {
+        // get the value of the key
         var value = formData[key];
+        // check to see if the value for the input field is empty
         if (value == "") {
+          // if the value is empty, then add the key to the missingInputs array
           missingInputs.push(key);
         }
       }
       console.warn("missingInputs:");
       console.warn(missingInputs);
 
-      if (missingInputs.length > 0) {
-        var missingInputsMessage = `Please write something in the following inputs:\n${missingInputs.join(
-          "\n"
-        )}`;
+      if (missingInputs.length > 0) { // if there are any elements in the missingInputs array, then run this block of code
+        // missingInputsMessage created, with the missingInputs array concatenated with a new line (\n)
+        var missingInputsMessage = `Please write something in the following inputs:\n${missingInputs.join("\n")}`;
+        // alert function displays pop-up message
         alert(missingInputsMessage);
-      } else {
+      } else { // if there are no missing elements in the missingInputs array, run this block of code
         // call the getCityForecast function, and provide the inputted city value from the form
         getCityForecast(city)
           // call .then method because fetch returns a promise
@@ -302,10 +309,10 @@ function main() {
             console.log("generalWeatherForecast:");
             console.log(generalWeatherForecast);
 
-            // Input sentence about the weather
+            // input sentence about the weather
             var currentWeather = document.getElementById("currentWeather");
 
-            // Write a sentence about the forecast in the inputted city
+            // write a sentence about the forecast in the inputted city
             currentWeather.innerText = `The forecast in ${data["locationName"]}, ${data["locationCountry"]} is ${data["generalWeatherForecast"]}.`;
 
             // get the tag associated with the general weather condition
@@ -313,48 +320,53 @@ function main() {
             console.log("selectedTag:");
             console.log(selectedTag);
 
+            // input title about the selected tag
+            var album_response_title = document.getElementById("album_response_title");
+
+            album_response_title.innerHTML = `Albums related to <i>${selectedTag}</i>:`;
+
+            // input subtitle about listening to albums on Last.fm
+            var album_response_subtitle = document.getElementById("album_response_subtitle");
+
+            album_response_subtitle.innerHTML = "Click on an album cover to listen to it on Last.fm";
+            
             // with the selected tag, fetch the last.fm api
-            getAlbumSuggestions(selectedTag).then(function (respObj) {
-              console.log("respObj:");
-              console.log(respObj);
+            getAlbumSuggestions(selectedTag)
+              .then(function (respObj) {
+                console.log("respObj:");
+                console.log(respObj);
 
-              // loop over the album info so we can call the getAlbumInfo function for each item in the list to obtain the album URL
-              for (var i = 0; i < respObj.length; i++) {
-                var album = respObj[i];
-                console.log("album:");
-                console.log(album);
+                // loop over the album info so we can call the getAlbumInfo function for each item in the list to obtain the album URL
+                for (var i = 0; i < respObj.length; i++) {
+                  var album = respObj[i];
+                  console.log("album:");
+                  console.log(album);
 
-                var albumName = album["albumName"];
-                // console.log("albumName:");
-                // console.log(albumName);
-                var albumArtist = album["albumArtist"];
+                  var albumName = album["albumName"];
+                  // console.log("albumName:");
+                  // console.log(albumName);
+                  var albumArtist = album["albumArtist"];
 
-                // call the getAlbumInfo function to obtain the URL of the album
-                getAlbumInfo(albumName, albumArtist, i).then(function (
-                  albumInfo
-                ) {
-                  console.warn("albumInfo:");
-                  console.log(albumInfo);
-                  var albumURL = albumInfo["albumURL"];
-                  var albumIndex = albumInfo["albumIndex"];
-                  //console.log(albumURL);
+                  // call the getAlbumInfo function to obtain the URL of the album
+                  getAlbumInfo(albumName, albumArtist, i)
+                    .then(function (albumInfo) {
+                      console.warn("albumInfo:");
+                      console.log(albumInfo);
+                      var albumURL = albumInfo["albumURL"];
+                      var albumIndex = albumInfo["albumIndex"];
+                      //console.log(albumURL);
 
-                  var albums = document.getElementsByClassName("album");
-                  console.warn("albums:");
-                  console.log(albums);
+                      var albums = document.getElementsByClassName("album");
+                      console.warn("albums:");
+                      console.log(albums);
 
-                  var aTag = albums[albumIndex];
+                      var aTag = albums[albumIndex];
 
-                  console.warn("aTag1 :");
-                  console.log(aTag);
+                      aTag.href = albumURL;
 
-                  aTag.href = albumURL;
-
-                  console.warn("aTag2 :");
-                  console.log(aTag);
-                });
-              }
-            });
+                    });
+                }
+              });
           });
       }
     });
